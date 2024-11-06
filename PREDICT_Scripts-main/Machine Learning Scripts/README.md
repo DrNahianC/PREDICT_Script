@@ -9,10 +9,12 @@ Note that this directory also contains the raw pain diary data in "Train/Pain_Di
 The first step is to organise the pain diary data (and impute missing pain diary data) which will then be used for the growth mixture modelling 
 
 "preprocessing_train.py" calls on "Train/Pain_Diary_Data_train.xlsx" to preprocess the raw training set pain diary data with the output being "Train/df_chew_filled_train.csv" and "Train/df_yawn_filled_train.csv" 
+NOTE: If you get an error with RPY2 Module, try commenting out Lines 7-8. 
 
 "shuffle_ID.py" calls on raw test set data "Test_unshuffled/Pain_Diary_Data_Test_Unshuffled.xlsx" to shuffle the test set diary data and saves output to "Test_unshuffled/ID_dropped_df.csv" and 'Test_unshuffled/ID_df.csv' as well as 'Test_shuffled/Pain_Diary_Data_Test_Shuffled.xlsx'. 
 
 "preprocessing_test.py" calls on "Test_shuffled/Pain_Diary_Data_Test_Shuffled.xlsx" to process the shuffled test set pain diary data with the output being "Test_shuffled/df_chew_filled_test.csv" and  "Test_shuffled/df_yawn_filled_test.csv"
+NOTE: If you get an error with RPY2 Module, try commenting out Lines 7-8. 
 
 ## Growth Mixture Modelling
 To run the growth mixture modelling, use "R_Script_LGM.R" in RStudio. "R_Script_LGM.R" calls on "Train/df_chew_filled_train.csv", "Train/df_yawn_filled_train.csv", "Test_shuffled/df_chew_filled_test.csv" and "Test_shuffled/df_yawn_filled_test.csv" to run
