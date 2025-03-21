@@ -1,4 +1,4 @@
-Please download this folder containing all the files for MATLAB, R and Python Scripts and other associated files for the PREDICT Study [https://www.medrxiv.org/content/10.1101/2024.06.16.24309005v3](https://jamanetwork.com/journals/jamaneurology/fullarticle/2829261)
+Please download this folder containing all the files for MATLAB, R and Python Scripts and other associated files for the PREDICT Study (https://jamanetwork.com/journals/jamaneurology/fullarticle/2829261) 
 
 # Update 18/03/25: Response to Buchel et al. 
 
