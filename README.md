@@ -19,7 +19,7 @@ To respond to Buchel et al’s second criticism on the use of a single test set,
 
 ### The protocol was chosen to match with real-world clinical deployment
 Our protocol mirrors real-world clinical deployment: models are trained on historical patient data, the best-performing model is selected and locked in, and then applied prospectively to new cases. In contrast, Buchel et al.'s approach is less rigorous in key ways:
-- They do not conclude their analyses with a fixed model for future data - If a decision needs to be made on which model to be used, it makes sense to select the one that performs best on the test set. Our approach ensures this by selecting the top-performing model from a validation set and locking it in.
+- They do not conclude their analyses with a fixed model for future data - If a decision needs to be made on which model to be used, it makes sense to select the one that performs best to be assessed on the test set. Our approach ensures this by selecting the top-performing model from a validation set and locking it in.
 - Mixing of Training and Test Data – Their method blends training and test data across multiple splits, preventing evaluation on a truly independent holdout set. In contrast, we performed model selection on the first 100 participants, locked in the best model, and then evaluated it on the next 50 participants i.e. the future unseen test set.
 By locking in the best model and testing it on an independent holdout set, our approach provides an unbiased estimate of real-world performance. In contrast, Buchel et al.'s method lacks this rigor and fails to align with real-world biomarker deployment. 
 
